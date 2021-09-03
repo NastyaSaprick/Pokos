@@ -1,0 +1,430 @@
+/* подключение шрифтов через import с сайта */
+/* Oswald , Prompt */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Prompt:wght@300;400;700&display=swap');
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+/* Montserra */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+*{
+  /* font-family: 'Poppins', sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'Prompt', sans-serif;
+  color: #333333;
+}
+h1 , h2{
+  font-family: 'Oswald', sans-serif;
+  line-height: 37px;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.container{
+  margin: auto;
+  width: 100%;
+  max-width: 1205px;
+}
+.title{
+  position: relative;
+  padding-left: 20px;
+  font-size: 34px;
+  border-left: 6px solid #219653;
+}
+/* header */
+header{
+  margin-bottom: 58px;
+}
+.header{
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.logo{
+  display: flex;
+  align-items: flex-end;
+}
+.logo h1{
+  font-size: 25px;
+}
+
+[alt=logo]{
+  margin-right: 12px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  max-width: 155px;
+  width: 100%;
+  font-size: 15px;
+  color: #219653;
+  cursor: pointer;
+}
+.contacts{
+  display: flex;
+  justify-content: space-between;
+  max-width: 315px;
+  width: 100%;
+}
+.bell{
+  text-decoration: underline;
+  font-size: 15px;
+  color: #219653;
+}
+.tel{
+  background: url(../img/tel.svg) no-repeat left;
+  padding-left: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+/* о компании */
+.section-company{
+  margin-bottom: 96px;
+} 
+.company p{
+  margin-top: 45px;
+  font-size: 16px;
+}
+
+/* клиенты */
+.section-customers{
+  margin-bottom: 140px;
+}
+.boxs-imgs{
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.box-img{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.img-text{
+  position: relative;
+  font-weight: 700;
+}
+.img-1::before{
+    content: 'Лукойл';
+    position: absolute;
+    bottom: -30px;
+}
+.img-2::before{
+  content: 'Макси';
+  position: absolute;
+  bottom: -14px;
+}
+.img-3::before{
+  content: 'Молочный комбинат';
+  position: absolute;
+  bottom: -29px;
+}
+.img-4::before{
+  content:'Кировспецмонтаж';
+  position: absolute;
+  bottom: -20px;
+}
+.img-5::before{
+  content: 'УК Радуга';
+  position: absolute;
+  bottom: -20px;
+}
+
+/* ценности  */
+.secyion-values{
+  padding: 100px 0;
+  background:#F8FCFA;
+  margin-bottom: 120px;
+}
+.values{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 45px;
+}
+.values p{
+  max-width: 625px;
+  font-size: 16px;
+  line-height: 172%;
+}
+
+/* доверие */
+.trust-text{
+  max-width: 625px;
+  font-size: 16px;
+  text-align: center;
+  margin: auto;
+}
+/* карточки */
+.section-trust{
+  margin-bottom: 120px;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 36px;
+  margin-top: 45px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.figure-1 , .figure-2 , .figure-3 , .figure-4 , .figure-5{
+  color:#EAEAEA;
+  font-size: 68px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  position: relative;
+  margin-left: 28px;
+}
+.figure{
+  position: relative;
+}
+.figure::after{
+  position: absolute;
+  content:'...';
+  width: 5px;
+  height: 5px;
+  bottom: 39px;
+  right: 0;
+  color: #000;
+  font-size: 25px;
+
+}
+.figure-1::before{
+  position: absolute;
+  content:'';
+  background: url(../img/calendar-icon.svg) no-repeat center;
+  width: 48px;
+  height: 48px;
+  bottom: 0;
+  left: -28px;
+}
+.figure-2::before{
+  position: absolute;
+  content:'';
+  background: url(../img/car.svg) no-repeat center;
+  height: 37px;
+  width: 48px;
+  bottom: 0;
+  left: -28px;
+}
+.figure-3::before{
+  position: absolute;
+  content:'';
+  background: url(../img/recordings.svg) no-repeat center;
+  height: 48px;
+  width: 43px;
+  bottom: 0;
+  left: -28px;
+}
+
+.figure-4::before{
+  position: absolute;
+  content:'';
+  background: url(../img/valid.svg) no-repeat center;
+  height: 48px;
+  width: 43px;
+  bottom: 0;
+  left: -28px;
+}
+.figure-5::before{
+  position: absolute;
+  content:'';
+  background: url(../img/map.svg) no-repeat center;
+  height: 48px;
+  width: 43px;
+  bottom: 0;
+  left: -28px;
+}
+.card strong{
+  margin-top: 28px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/* примеры */
+.section-examples{
+  margin-bottom: 70px;
+}
+.examples{
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.examples img{
+  margin-bottom: 20px;
+}
+.examples-link{
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* footer */
+footer{
+  background: #26292B;
+  color: #FFFFFF;
+}
+footer a{
+  color:#fff;
+}
+.footer{
+  padding-top: 50px;
+  padding-bottom: 27px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-contacts{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.footer-tel , .footer-logo{
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 33px;
+  font-weight: bold;
+}
+.footer-map{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #373737;
+}
+.map-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.map-menu h3{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;  
+  color: #FBFBFB;
+  margin-bottom: 23px;
+}
+.map-menu a{
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* адоптация */
+@media(max-width:1200px){
+.container{
+  width: 98%;
+}
+.values{
+  flex-direction: column;
+  align-items: center;
+}
+.values p{
+  order: 2;
+  margin-top: 20px;
+  text-align: center;
+}
+}
+@media(max-width:992px){
+  .box-img{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .img-text{
+    margin: 20px;
+  }
+  .examples{
+    justify-content: space-around;
+  }
+  
+  
+}
+@media(max-width:780px){
+  .title{
+    font-size: 30px;
+  }
+  .boxs-imgs , .box-img{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .menu{
+    order: 2;
+  }
+  .contacts{
+    margin: 20px 0;
+    max-width: 280px;
+  }
+  .cards{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card{
+    margin: 20px;
+  }
+  .footer-map{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .map-menu{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .map-menu h3{
+    text-decoration:underline;
+  }
+  .footer-contacts{
+    flex-direction: column;
+  }
+  .footer-contacts p , .footer-tel, .footer-logo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media(max-width:560px){
+  .title{
+    font-size: 20px;
+  }
+  .cards{
+    flex-direction: column;
+  }
+
+  .values img{
+    width: 300px;
+  }
+}
